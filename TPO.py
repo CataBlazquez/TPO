@@ -4,7 +4,7 @@ puertas={
    ((0,1),"living"): {
        "habitacion_destino" : "cuarto principal"
        "coordenada_destino"()
-   }
+   }    
 }  
 
 # living=[["⬛⬛⬛⬛⬛⬛⬛"],
