@@ -1,5 +1,11 @@
 import emoji
-
+"""El diccionario de puertas, se va a leer con el primer elemento siendo las coordenadas de la puerta, y la ubicacion actual. """
+puertas={
+   ((0,1),"living"): {
+       "habitacion_destino" : "cuarto principal"
+       "coordenada_destino"()
+   }
+}
 
 # living=[["⬛⬛⬛⬛⬛⬛⬛"],
 # ["⬛⬜⬜⬜⬜⬜⬜⬛"],
@@ -42,10 +48,22 @@ Si hay -1 esta prohibido caminar (ya sea porque hay una pared o un mueble), si h
 # ["⬛⬜⬜⬜⬛"],
 # ["⬛⬛⬛⬛⬛"]]
 
+# matriz_cocina=[[-1,-1,-1],
+#                [-1,0,0,-1,-1],#pared, vacio, vacio, heladera, pared
+#                [-1,-1,0,0,2], #pared, horno y puerta a living
+#                [-1,0,0,0,-1],
+#                [-1,-1,-1]]
+
 # baño=[["⬛⬛⬛⬛⬛"],
 # ["⬛⬜⬜⬜⬛"],
 # ["⬛⬜⬜⬜⬛"],
 # ["⬛⬛⬛⬛⬛"]]
+
+# matriz_baño=[[-1,-1,-1],
+#             [-1,-1,0,-1,-1],#pared, primera parte de la bañera, nada, inodoro, pared
+#             [-1,-1,-1,0,2],#pared, segunda parte bañera, lavamanos, nada, puerta a living
+#             [-1,-1,-1] #pared, espejo, pared
+# ]
 
 # cuarto_principal=[["⬛⬛⬛⬛⬛⬛⬛"],
 # ["⬛⬜⬜⬜⬜⬜⬛"],
@@ -55,9 +73,24 @@ Si hay -1 esta prohibido caminar (ya sea porque hay una pared o un mueble), si h
 # ["⬛⬜⬜⬜⬜⬜⬛"],
 # ["⬛⬛⬛⬛⬛⬛⬛"]]
 
-# closet=[["⬛⬛⬛⬛"],
-# ["⬛⬜⬜⬛"],
-# ["⬛⬛⬛⬛"]]
+# matriz_cuarto_principal=[[-1,-1,-1,-1,-1],#pared del cuarto
+#                         [-1,-1,-1,-1,-1,-1,-1],#pared, mesa de luz, camax3, mesa de luz, pared
+#                         [-1,0,-1,-1,-1,0,-1],
+#                         [-1,0,-1,-1,-1,0,-1],
+#                         [-1,-1,0,0,0,0,-1],#pared, mesa de maquillaje, vacio
+#                         [-1,-1,-1,-1, 0,0,2],#pared, mesa de maquillaje, zapatero, vacio y puerta a closet
+#                         [-1,-1,-1,2,-1]]#pared y puerta a living
+
+
+# closet=[["⬛⬛⬛"],
+#["⬛⬜⬛"],
+# ["⬛⬜⬛"],
+# ["⬛⬛⬛"]]
+
+# matriz_closet=[[-1,],
+#                [-1,0,-1],
+#                [2,0,-1]
+#                [-1]]
 
 # oficina=[["⬛⬛⬛⬛⬛"],
 # ["⬛⬜⬜⬜⬛"],
@@ -66,6 +99,13 @@ Si hay -1 esta prohibido caminar (ya sea porque hay una pared o un mueble), si h
 # ["⬛⬜⬜⬜⬛"],
 # ["⬛⬛⬛⬛⬛"]]
 
+# matriz_oficina=[[-1,-1,-1],
+#                 [-1,-1,-1,-1,-1],#paredes y escritorio
+#                 [-1,0,-1,0,-1], #paredes y silla
+#                 [-1,0,0,-1,-1],#paredes y biblioteca 
+#                 [-1,0,0,-1,2],#paredes y biblioteca con puerta oculta
+#                 [-1,2,-1]
+# ]
 
 # cuarto_oculto=[["⬛⬛⬛⬛⬛⬛"],
 # ["⬛⬜⬜⬜⬜⬛"],
@@ -74,11 +114,26 @@ Si hay -1 esta prohibido caminar (ya sea porque hay una pared o un mueble), si h
 # ["⬛⬜⬜⬜⬜⬛"],
 # ["⬛⬛⬛⬛⬛⬛"]]
 
-# cuarto_extra=[["⬛⬛⬛⬛⬛⬛"],
-# ["⬛⬜⬜⬜⬜⬛"],
-# ["⬛⬜⬜⬜⬜⬛"],
-# ["⬛⬜⬜⬜⬜⬛"],
-# ["⬛⬛⬛⬛⬛⬛"]]
+# matriz_cuarto_oculto=[[-1,-1,-1,-1], #lo dejo vacio porque no se me ocurre que poner
+#                       [-1,0,0,0,0,-1],
+#                       [-1,0,0,0,0,-1],
+#                       [2,0,0,0,0,-1],
+#                       [-1,0,0,0,0,-1],
+#                       [-1,-1,-1,-1]]
+
+# cuarto_extra=[["⬛⬛⬛⬛⬛"],
+# ["⬛⬜⬜⬜⬛"],
+# ["⬛⬜⬜⬜⬛"],
+# ["⬛⬜⬜⬜⬛"],
+# ["⬛⬜⬜⬜⬛"],
+# ["⬛⬛⬛⬛⬛"]]
+
+# matriz_cuarto_extra=[[-1,-1,-1],
+#                     [-1,0,-1,-1,-1],#paredes y ropero 
+#                     [2,0,0,0,-1],#puerta, , pared 
+#                     [-1,0,0,0,-1],
+#                     [-1,-1,-1,-1,-1]#paredes, cama
+# ]
 
 
 def Eleccion_Personaje():
@@ -137,7 +192,7 @@ def Living (personaje, inventario, matriz_living, objetos_living):
     pass
     
 def Mover  (habitacion_actual):
-    direcciones = ["adelante", "atrás", "izquierda", "derecha"]
+    direcciones = ["w", "s", "a", "d"] 
     # Primero buscamos la posición actual del jugador (el número 1)
     for fila in range(len(habitacion_actual)):
         for col in range(len(habitacion_actual[fila])):
@@ -146,10 +201,10 @@ def Mover  (habitacion_actual):
                 col_jugador = col
     # Coordenadas relativas a la posición actual
     coordenadas = [
-        (fila_jugador- 1, col_jugador),  # adelante
-        (fila_jugador + 1, col_jugador),  # atrás
-        (fila_jugador, col_jugador - 1),  # izquierda
-        (fila_jugador, col_jugador + 1)   # derecha
+        (fila_jugador- 1, col_jugador),  # adelante (W)
+        (fila_jugador + 1, col_jugador),  # atrás (S)
+        (fila_jugador, col_jugador - 1),  # izquierda (A)
+        (fila_jugador, col_jugador + 1)   # derecha (D)
     ]
     # Recorremos 
     movimientos_posibles = []
@@ -167,23 +222,54 @@ def Mover  (habitacion_actual):
 
     print("el jugador esta en: ", fila_jugador,col_jugador)
     print("Movimientos posibles:", movimientos_posibles)
+    movimiento_elegido=input("¿Para donde te quieres mover?").lower()
+    while movimiento_elegido not in movimientos_posibles:
+        print ("Movimiento invalido")
+        movimiento_elegido=input("¿Para donde te quieres mover?").lower()
+    habitacion_actual[fila_jugador][col_jugador]=0
+    if movimiento_elegido=='w':
+        if habitacion_actual[fila_jugador-1][col_jugador]==2:
+            Puertas(habitacion_actual,(fila_jugador)-1,col_jugador)
+        habitacion_actual[fila_jugador-1][col_jugador]=1
+    elif movimiento_elegido=='s':
+        if habitacion_actual[fila_jugador+1][col_jugador]==2:
+            Puertas(habitacion_actual,(fila_jugador)+1,col_jugador)
+        habitacion_actual[fila_jugador+1][col_jugador]=1
+    elif movimiento_elegido=='a':
+        if habitacion_actual[fila_jugador][col_jugador-1]==2:
+            Puertas(habitacion_actual,fila_jugador,(col_jugador)-1)
+        habitacion_actual[fila_jugador][col_jugador-1]=1
+    elif movimiento_elegido=='d':
+        if habitacion_actual[fila_jugador][col_jugador+1]==2:
+            Puertas(habitacion_actual,fila_jugador,(col_jugador)+1)
+        habitacion_actual[fila_jugador][col_jugador+1]=1
     return
 
+def Puertas(habitacion_actual, habitacion_siguiente, puerta_fila,puerta_columna):
+    pass
     
+def Mensajear():
+    pass
 
-def Puertas(habitacion_actual, habitacion_a_entrar):
+def Hojas():
     pass
 
 def Opciones_Control_de_Personaje(personaje,inventario,habitacion_actual):
-    print("¿Que queres hacer?")
     print("MOVER || VER INVENTARIO || MANDAR MENSAJE AL DUEÑO DE CASA || USAR...  ||")
+    decision=input("¿Que quieres hacer?\n").lower()
+    if decision=='mover':
+        Mover()
+    elif decision=='inventario' or decision=='ver inventario':
+        pass
+    elif decision =='mandar mensaje al dueño de casa' or decision=='mensaje' or decision=='mandar mensaje':
+        pass
+    pass
 
+def Ver():
+    pass
 # print("Elige para donde moverte: ", Mover_Izquierda,Mover_Adelante,Mover_Atras,Mover_Derecha)
 #     movimiento=input("Opcion: ")
 # # def Opciones_de_Control_del_Personaje (personaje, inventario):
-
-
-
 
 """--------------------------------------------------------------------------------------------------------------------------"""    
 #main 
