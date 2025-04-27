@@ -1,0 +1,75 @@
+Matriz_Cocina = [["⬛⬛⬛⬛⬛"],
+# ["⬛⬜⬜⬜⬛"],
+# ["⬛⬜⬜⬜⬛"],
+# ["⬛⬜⬜⬜⬛"],
+# ["⬛⬛⬛⬛⬛"]]
+
+Objetos_Cocina = [[-1,-1,-1],
+#                [-1,-1,0,-1,-1],
+#                [-1,-1,0,0,2], 
+#                [-1,-1,-1,-1,-1],
+#                [-1,-1,-1]]
+
+Objetos_Cocina = [[-1,-1,-1]
+                  ["ventana", "mesada", "comida perro" ,"heladera",-1]
+                  [-1,"cocina",0 ,0 ,2]
+                  [-1, "alacena", "mesada", "mesada", -1]
+                  [-1, -1, -1,]]
+
+alacena_cocina = (
+    ("Aceite", "de oliva"),
+    ("Sal", "fina"),
+    ("Azúcar", "rubia"),
+    ("Harina", "000"),
+    ("Arroz", "largo fino"),
+    ("Fideos", "tirabuzón"),
+    ("Lentejas", "secas"),
+    ("Café", "instantáneo"),
+    ("Té", "verde"),
+    ("Yerba", "con palo"),
+    ("Galletitas", "dulces"),
+    ("Cacao", "en polvo"),
+    ("Mermelada", "de frutilla"),
+    ("Enlatados", "atún"),
+    ("Especias", "orégano"),
+    ("Pan", "integral"),
+    ("Servilletas", "doble hoja")
+)
+
+print("Elementos de la alacena de cocina y sus características:")
+for i, (elemento, caracteristica) in enumerate(alacena_cocina):
+    print(f"{i + 1}. {elemento}: {caracteristica}")
+
+respuesta = input('¿Desea tomar algo de la alacena? seleccione "Si" o "No": ')
+
+if respuesta.lower() == 'si':
+    elementos_tomados = []
+    alacena_lista = list(alacena_cocina)
+    
+    while True:
+        seleccion = int(input("Seleccione el número del elemento que desea tomar (ingrese -1 para finalizar): "))
+        if seleccion == -1:
+            break
+        if 1 <= seleccion <= len(alacena_lista):
+            elemento_tomado = alacena_lista[seleccion - 1]
+            elementos_tomados.append(elemento_tomado)
+            alacena_lista[seleccion - 1] = (None, None)  # Llenar el espacio con vacío
+        else:
+            print("Selección no válida. Intente nuevamente.")
+    
+  
+    alacena_cocina = tuple(alacena_lista)
+    
+   
+    print("\nHas tomado los siguientes elementos:")
+    for elemento, caracteristica in elementos_tomados:
+        print(f"- {elemento}: {caracteristica}")
+    
+    print("\nElementos restantes en la alacena:")
+    for i, (elemento, caracteristica) in enumerate(alacena_cocina):
+        if elemento is not None:
+            print(f"{i + 1}. {elemento}: {caracteristica}")
+        else:
+            print(f"{i + 1}. [Vacío]")
+else:
+    print("No has tomado ningún elemento.")
