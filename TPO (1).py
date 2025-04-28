@@ -4,102 +4,102 @@ from functools import reduce
 puertas_living={
     #puertas desde el living
    (0,2): {
-       'lugar_de_la_puerta': "living",
-       'habitacion_destino': 'cuarto principal',
-       "coordenada_destino": (5,4),
-       "estado_puerta": "abierta",
+       'lugar de la puerta': "living",
+       'habitacion destino': 'cuarto principal',
+       "coordenada destino": (5,4),
+       "estado puerta": "abierta",
     },
     (7,2) : {
-        'lugar_de_la_puerta':"living",
-        "habitacion_destino": "afuera" 
+        'lugar de la puerta':"living",
+        "habitacion destino": "afuera" 
     },
     (0,4): {
-       'lugar_de_la_puerta':"living",
-       'habitacion_destino': 'oficina',
-       "coordenada_destino": (4,2),
-       "estado_puerta": "abierta",
+       'lugar de la puerta':"living",
+       'habitacion destino': 'oficina',
+       "coordenada destino": (4,2),
+       "estado puerta": "abierta",
     },
     (2,0): {
-       'lugar_de_la_puerta':"living",
-       'habitacion_destino': 'baño',
-       "coordenada_destino": (2,3),
-       "estado_puerta": "abierta",
+       'lugar de la puerta':"living",
+       'habitacion destino': 'baño',
+       "coordenada destino": (2,3),
+       "estado puerta": "abierta",
     },
     (4,0): {
-       'lugar_de_la_puerta':"living",
-       'habitacion_destino': 'cocina',
-       "coordenada_destino": (2,3),
-       "estado_puerta": "abierta",
+       'lugar de la puerta':"living",
+       'habitacion destino': 'cocina',
+       "coordenada destino": (2,3),
+       "estado puerta": "abierta",
     },
     (3,7): {
-       'lugar_de_la_puerta':"living",
-       'habitacion_destino': 'cuarto_extra',
-       "coordenada_destino": (2,1),
+       'lugar de la puerta':"living",
+       'habitacion destino': 'cuarto_extra',
+       "coordenada destino": (2,1),
        "estado_puerta": "abierta",
     }
 }
 puertas_cuarto_principal= {
     #puertas desde cuarto principal
     (6,4): {
-       'lugar_de_la_puerta': "cuarto principal",
-       'habitacion_destino': 'living',
-       "coordenada_destino": (1,2),
-       "estado_puerta": "abierta",
+     ' ': "cuarto principal",
+       ' ': 'living',
+       "coordenada destino": (1,2),
+       "estado puerta": "abierta",
         },
     (5,6): {
-       'lugar_de_la_puerta': "cuarto principal",
-       'habitacion_destino': 'closet',
-       "coordenada_destino": (2,1),
-       "estado_puerta": "abierta",
+     ' ': "cuarto principal",
+       ' ': 'closet',
+       "coordenada destino": (2,1),
+       "estado puerta": "abierta",
         }
 }
 puerta_closet= {#puertas desde el closet 
     (2,0):{
-        'lugar_de_la_puerta': "closet",
-       'habitacion_destino': 'cuarto principal',
-       "coordenada_destino": (5,5),
-       "estado_puerta": "abierta",
+     ' ': "closet",
+       ' ': 'cuarto principal',
+       "coordenada destino": (5,5),
+       "estado puerta": "abierta",
     }}
 puerta_baño={#puertas desde el baño 
     (2,4): {
-        'lugar_de_la_puerta': "baño",
-       'habitacion_destino': 'living',
-       "coordenada_destino": (2,1),
-       "estado_puerta": "abierta",
+     ' ': "baño",
+       ' ': 'living',
+       "coordenada destino": (2,1),
+       "estado puerta": "abierta",
     }}
 puerta_cocina={#puertas desde la cocina 
     (2,4): {
-        'lugar_de_la_puerta': "cocina",
-       'habitacion_destino': 'living',
-       "coordenada_destino": (4,1),
-       "estado_puerta": "abierta",
+     ' ': "cocina",
+       ' ': 'living',
+       "coordenada destino": (4,1),
+       "estado puerta": "abierta",
     }}
 puertas_oficina={#puertas desde la oficina 
     (5,2): {
-        'lugar_de_la_puerta': "oficina",
-       'habitacion_destino': 'living',
-       "coordenada_destino": (1,4),
-       "estado_puerta": "abierta",
+     ' ': "oficina",
+       ' ': 'living',
+       "coordenada destino": (1,4),
+       "estado puerta": "abierta",
     },
     (4,4): {
-        'lugar_de_la_puerta': "oficina",
-       'habitacion_destino': 'cuarto oculto',
-       "coordenada_destino": (3,1),
-       "estado_puerta": "oculta",
+     ' ': "oficina",
+       ' ': 'cuarto oculto',
+       "coordenada destino": (3,1),
+       "estado puerta": "oculta",
     }}
 puerta_cuarto_oculto={#puerta desde el cuarto oculto
     (3,0): {
-        'lugar_de_la_puerta': "cuarto oculto",
-       'habitacion_destino': 'oficina',
-       "coordenada_destino": (4,3),
-       "estado_puerta": "oculta",
+     ' ': "cuarto oculto",
+       ' ': 'oficina',
+       "coordenada destino": (4,3),
+       "estado puerta": "oculta",
     }}
 puerta_cuarto_extra={#puerta desde cuarto extra
     (2,0): {
-       'lugar_de_la_puerta':"cuarto extra",
-       'habitacion_destino': 'living',
-       "coordenada_destino": (3,6),
-       "estado_puerta": "abierta",
+       'lugar de la puerta':"cuarto extra",
+       'habitacion destino': 'living',
+       "coordenada destino": (3,6),
+       "estado puerta": "abierta",
 }}
 """Las matrices de objetos, van a indicar que hay en cada uno y cada uno tiene sus acciones especificas
     Si hay 0 es porque no hay nada, si hay algun objeto, se escribira tal objeto y sus acciones. Las puertas no cuentan como objetos.
@@ -168,11 +168,11 @@ matriz_cuarto_extra=[[-1,-1,-1],
                     [2,0,0,0,-1],#puerta, , pared 
                     [-1,0,0,0,-1],
                     [-1,-1,-1,-1,-1],]#paredes, cama
-objetos_cocina = [[-1,-1,-1]
-                  ["ventana", "mesada", "comida perro" ,"heladera",-1]
-                  [-1,"cocina",0 ,0 ,2]
-                  [-1, "alacena", "mesada", "mesada", -1]
-                  [-1, -1, -1,]]
+objetos_cocina = [[-1,-1,-1],
+                  ["ventana", "mesada", "comida perro" ,"heladera",-1],
+                  [-1,"cocina",0 ,0 ,2],
+                  [-1, "alacena", "mesada", "mesada", -1],
+                  [-1, -1, -1,],]
 diccionario_matrices= {
     "living": matriz_living,
     "objetos living": objetos_living,
@@ -189,11 +189,11 @@ diccionario_matrices= {
 diccionario_puertas={
     "puertas living" : puertas_living,
     "puertas closet" : puerta_closet,
-    "puerta baño" : puerta_baño,
-    "puerta cocina" : puerta_cocina,
-    "puerta cuarto extra" : puerta_cuarto_extra,
-    "puerta cuarto oculto" : puerta_cuarto_oculto,
-    "puertas cuarto principañ" : puertas_cuarto_principal,
+    "puertas baño" : puerta_baño,
+    "puertas cocina" : puerta_cocina,
+    "puertas cuarto extra" : puerta_cuarto_extra,
+    "puertas cuarto oculto" : puerta_cuarto_oculto,
+    "puertas cuarto principal" : puertas_cuarto_principal,
     "puertas oficina" : puertas_oficina, 
 }
 def Eleccion_Personaje():
@@ -217,8 +217,7 @@ def Eleccion_Personaje():
         eleccion=input("Elige tu personaje: ").lower()
     return eleccion
 
-def Inicio_Juego(personaje,matriz_living):
-    inventario=[]
+def Inicio_Juego(personaje, inventario):
     print (emoji.emojize("Mañana tengo que entregar el trabajo final de Programacion I y Edesur hizo una de las suyas mientras tenia el Word abierto y sin  el autoguardado."
     "Por suerte, mi amigo ya lo había imprimido (impreso o imprimido? A ver que dice la RAE… Ah cierto, no tengo WIFI:crying_face:).", language='alias'))
     print ("Cuando llego a la casa de mi amigo, me doy cuenta que el tambien esta sin luz")
@@ -274,17 +273,20 @@ def Ubicacion_Actual_Personaje(habitacion_actual):
     ubicacion_actual=(fila_jugador, col_jugador)
     return ubicacion_actual, coordenadas, direcciones
 
-def Living (personaje, inventario, diccionario_matrices):
-    matriz_habitacion= diccionario_matrices ["living"]
-    objetos_habitacion= diccionario_matrices [" objetos living"]
-    nombre_habitacion="living"
+def Living (personaje, inventario):
+    nombre_habitacion=str("living")
     print(f"\nEstás en el {nombre_habitacion}. Observas alrededor...")
-    ubicacion_actual,coordenadas,direcciones=Ubicacion_Actual_Personaje(matriz_living)
-    fila_jugador=ubicacion_actual[0]
-    columna_jugador=ubicacion_actual[1]
-    objetos_interactuables = []
+    Opciones_Control_de_Personaje(personaje,inventario,nombre_habitacion)
+    
+def Objetos_Cercanos_interactivos(inventario, nombre_habitacion):
+    
+    matriz_habitacion=diccionario_matrices[nombre_habitacion]
+    objetos_interactivos = []
+    objetos_habitacion=diccionario_matrices["objetos "+nombre_habitacion]
+    
+    ubicacion_actual,coordenadas,direcciones=Ubicacion_Actual_Personaje(matriz_habitacion)
+    fila_jugador,columna_jugador= ubicacion_actual
     adyacentes = [(-1, 0), (1, 0), (0, -1), (0, 1)]
-
     for df, dc in adyacentes:
         nueva_fila = fila_jugador + df
         nueva_columna = columna_jugador + dc
@@ -294,20 +296,19 @@ def Living (personaje, inventario, diccionario_matrices):
                 if 0 <= nueva_fila < len(objetos_habitacion) and 0 <= nueva_columna < len(objetos_habitacion[nueva_fila]):
                     objeto = objetos_habitacion[nueva_fila][nueva_columna]
                     if objeto != 0:
-                        objetos_interactuables.append(((nueva_fila, nueva_columna), objeto))
+                        objetos_interactivos.append(((nueva_fila, nueva_columna), objeto))
 
-    if objetos_interactuables:
+    if objetos_interactivos:
         print("\nObjetos cercanos con los que puedes interactuar:")
-        for i, (coordenadas, nombre_objeto) in enumerate(objetos_interactuables):
+        for i, (coordenadas, nombre_objeto) in enumerate(objetos_interactivos):
             print(f"{i+1}. {nombre_objeto} (en fila: {coordenadas[0]}, columna: {coordenadas[1]})")
-
-        accion = input("¿Qué deseas hacer? (VER OBJETO/AGARRAR OBJETO/MOVER/INVENTARIO/USAR...) ").lower()
-
+        print("Ver Objeto || Agarrar Objeto")
+        accion=input (">").lower()
         if "ver objeto" in accion or "agarrar objeto" in accion:
             try:
                 indice_objeto = int(input("Elige el número del objeto: ")) - 1
-                if 0 <= indice_objeto < len(objetos_interactuables):
-                    coordenadas_objeto, nombre_objeto = objetos_interactuables[indice_objeto]
+                if 0 <= indice_objeto < len(objetos_interactivos):
+                    coordenadas_objeto, nombre_objeto = objetos_interactivos[indice_objeto]
                     if "ver" in accion:
                         VerObjeto(personaje, nombre_objeto)
                     elif "agarrar" in accion:
@@ -329,8 +330,7 @@ def Living (personaje, inventario, diccionario_matrices):
             print("Acción no reconocida.")
     else:
         print("No hay objetos interesantes cerca.")
-
-    Opciones_Control_de_Personaje(personaje, inventario, matriz_habitacion)
+    Opciones_Control_de_Personaje(personaje, inventario, nombre_habitacion)
 
 def procesar_mensaje(mensaje):
     # Extraer cada tercera letra usando slice
@@ -358,6 +358,11 @@ def procesar_mensaje(mensaje):
     mensaje_descifrado = " ".join(palabras).lower().capitalize()
     
     return mensaje_descifrado
+
+def Inventario(inventario):
+    for objeto in inventario:
+        print(objeto)
+    return 
     
 #en todo esta escrito como baño pero por la ñ escribimos toilette
 def Toilette(personaje, inventario, matriz_habitacion, objetos_habitacion):
@@ -453,7 +458,7 @@ def Toilette(personaje, inventario, matriz_habitacion, objetos_habitacion):
     else:
         print("Operación cancelada.")
 
-def Mover  (nombre_habitacion, diccionario_matrices, diccionario_puertas):
+def Mover  (nombre_habitacion):
     habitacion_actual= diccionario_matrices [nombre_habitacion]
     ubicacion_personaje, coordenadas, direcciones =Ubicacion_Actual_Personaje(habitacion_actual)
     fila_jugador=ubicacion_personaje[0]
@@ -475,32 +480,69 @@ def Mover  (nombre_habitacion, diccionario_matrices, diccionario_puertas):
         print("Puertas adyacentes:", adyacentes_con_puertas)
 #eleccion de movimiento
     movimiento_elegido=input("¿Para donde te quieres mover?").lower()
-    while movimiento_elegido not in movimientos_posibles:
+    while(movimiento_elegido not in movimientos_posibles) and (movimiento_elegido not in adyacentes_con_puertas):
         print ("Movimiento invalido")
         movimiento_elegido=input("¿Para donde te quieres mover?").lower()
     habitacion_actual[fila_jugador][col_jugador]=0
     if movimiento_elegido=='w':
         if habitacion_actual[fila_jugador-1][col_jugador]==2:
-            Puertas(habitacion_actual,(fila_jugador)-1,col_jugador, nombre_habitacion)
+            destino=Puertas((fila_jugador)-1,col_jugador, nombre_habitacion)
+            Cambio_de_Habitacion(destino)
         habitacion_actual[fila_jugador-1][col_jugador]=1
     elif movimiento_elegido=='s':
         if habitacion_actual[fila_jugador+1][col_jugador]==2:
-            Puertas(habitacion_actual,(fila_jugador)+1,col_jugador, nombre_habitacion)
+            destino=Puertas((fila_jugador)+1,col_jugador, nombre_habitacion)
+            Cambio_de_Habitacion(destino)
         habitacion_actual[fila_jugador+1][col_jugador]=1
     elif movimiento_elegido=='a':
         if habitacion_actual[fila_jugador][col_jugador-1]==2:
-            Puertas(habitacion_actual,fila_jugador,(col_jugador)-1, nombre_habitacion)
+            destino=Puertas(fila_jugador,(col_jugador)-1, nombre_habitacion)
+            Cambio_de_Habitacion(destino)
         habitacion_actual[fila_jugador][col_jugador-1]=1
     elif movimiento_elegido=='d':
         if habitacion_actual[fila_jugador][col_jugador+1]==2:
-            Puertas(habitacion_actual,fila_jugador,(col_jugador)+1, nombre_habitacion)
+            destino=Puertas(fila_jugador,(col_jugador)+1, nombre_habitacion)
+            Cambio_de_Habitacion(destino)
         habitacion_actual[fila_jugador][col_jugador+1]=1
     return
 
-def Puertas(habitacion_actual,fila_puerta,col_puerta, nombre_habitacion, diccionario_puertas, diccionario_matrices):
-   pass
+def Cambio_de_Habitacion(destino):
+    """Utiliza informacion del string destino para poder encontrar la habitacion a la que tiene que ir segun el diccionario de matrices y de puertas"""
 
-def VerObjeto(personaje, nombre_objeto): 
+    if destino=="cocina":
+        Cocina()
+    elif destino=="baño":
+        Toilette()
+    elif destino=="living":
+        Living()
+    return destino
+
+def Puertas(fila_puerta,col_puerta, nombre_habitacion):
+   coordenadas_puerta=(fila_puerta,col_puerta)
+   habitacion_puerta=(diccionario_puertas["puertas "+ nombre_habitacion])
+   info_habitacion=habitacion_puerta[coordenadas_puerta]
+   habitacion_destino=info_habitacion["habitacion destino"]
+   matriz_destino = diccionario_matrices[habitacion_destino]
+
+   habitacion_actual=diccionario_matrices[nombre_habitacion]
+   for fila in range(len(habitacion_actual)):
+    for col in range(len(habitacion_actual[fila])):
+        if habitacion_actual[fila][col] == 1:
+            habitacion_actual[fila][col] = 0
+   coordenadas_destino=info_habitacion["coordenada destino"]
+   fila_destino,col_destino=coordenadas_destino
+   matriz_destino[fila_destino][col_destino]=1
+   nombre_habitacion=str(habitacion_destino)
+   return nombre_habitacion
+   
+def VerObjeto(personaje, nombre_habitacion, inventario):
+    for objeto in inventario:
+        print(objeto)
+    nombre_objeto=input("Que objeto quieres mirar?").lower
+    while nombre_objeto not in inventario:
+        print("ese objeto no esta en la lista")
+        nombre_objeto=input("Que objeto quieres mirar?").lower
+    
     #funcion para poder ver cada objeto en el juego
     print(f"\n{personaje} está mirando {nombre_objeto}.")
     #Esto es temporal hasta ver diccionarios!
@@ -558,6 +600,7 @@ def VerObjeto(personaje, nombre_objeto):
             print("Gabriel mira las llaves sin darle mucha importancia.")
         elif nombre_objeto == "television":
             print("Gabriel mira la televisión apagada, pensando en qué canal pasarán competencias de fuerza.")
+    return
 
 def AgarrarObjeto(personaje, nombre_objeto, inventario, coordenadas_objeto, objetos_habitacion):
     print(f"\n{personaje} intenta agarrar {nombre_objeto}.")
@@ -577,7 +620,10 @@ def AgarrarObjeto(personaje, nombre_objeto, inventario, coordenadas_objeto, obje
         objetos_habitacion[coordenadas_objeto[0]][coordenadas_objeto[1]] = 0
     # Agrega más lógica para otros objetos que se pueden agarrar y cómo afecta a cada personaje
 
-def UsarObjeto(personaje, objeto_a_usar, inventario, matriz_habitacion, objetos_habitacion):
+def UsarObjeto(personaje, inventario):
+    Inventario(inventario)
+    print("Que objeto quieres usar?")
+    objeto_a_usar=input(">").lower()
     print(f"\n{personaje} intenta usar {objeto_a_usar}.")
     if objeto_a_usar in inventario:
         if objeto_a_usar == "chapa toilette":
@@ -597,25 +643,22 @@ def Mensajear():
 def Hojas():
     pass
 
-def Opciones_Control_de_Personaje(personaje,inventario,habitacion_actual):
+def Opciones_Control_de_Personaje(personaje,inventario,nombre_habitacion):
     while True:
         print("\n¿Qué quieres hacer ahora?")
         print("MOVER || VER INVENTARIO || VER OBJETOS CERCANOS || USAR OBJETO ||") 
         decision = input("> ").lower()
         if decision == "mover":
-            Mover(habitacion_actual,)
-            break # Vuelve a la función de la habitación para la nueva posición
+            Mover(nombre_habitacion)
         elif "inventario" in decision:
             print("Inventario:", inventario)
         elif "ver objetos cercanos":
-            # Vuelve a llamar a Living para mostrar e interactuar con objetos
-            Living(personaje, inventario, habitacion_actual, objetos_living) # pasar la matriz de objetos correcta
-            break
+            Objetos_Cercanos_interactivos(inventario,nombre_habitacion)
         elif "usar objeto":
-            objeto_a_usar = input("¿Qué objeto quieres usar de tu inventario? ").lower()
-            UsarObjeto(personaje, objeto_a_usar, inventario, habitacion_actual, objetos_living) # pasar las matrices correctas
+            UsarObjeto(personaje, inventario, nombre_habitacion) 
         else:
             print("Opción no válida.")
+    
 
 def Cocina():
     alacena_cocina = (
@@ -636,50 +679,50 @@ def Cocina():
     ("Especias", "orégano"),
     ("Pan", "integral"),
     ("Servilletas", "doble hoja")
-)
+    )
 
-print("Elementos de la alacena de cocina y sus características:")
-for i, (elemento, caracteristica) in enumerate(alacena_cocina):
-    print(f"{i + 1}. {elemento}: {caracteristica}")
-
-respuesta = input('¿Desea tomar algo de la alacena? seleccione "Si" o "No": ')
-
-if respuesta.lower() == 'si':
-    elementos_tomados = []
-    alacena_lista = list(alacena_cocina)
-    
-    while True:
-        seleccion = int(input("Seleccione el número del elemento que desea tomar (ingrese -1 para finalizar): "))
-        if seleccion == -1:
-            break
-        if 1 <= seleccion <= len(alacena_lista):
-            elemento_tomado = alacena_lista[seleccion - 1]
-            elementos_tomados.append(elemento_tomado)
-            alacena_lista[seleccion - 1] = (None, None)  # Llenar el espacio con vacío
-        else:
-            print("Selección no válida. Intente nuevamente.")
-    
-  
-    alacena_cocina = tuple(alacena_lista)
-    
-   
-    print("\nHas tomado los siguientes elementos:")
-    for elemento, caracteristica in elementos_tomados:
-        print(f"- {elemento}: {caracteristica}")
-    
-    print("\nElementos restantes en la alacena:")
+    print("Elementos de la alacena de cocina y sus características:")
     for i, (elemento, caracteristica) in enumerate(alacena_cocina):
-        if elemento is not None:
-            print(f"{i + 1}. {elemento}: {caracteristica}")
-        else:
-            print(f"{i + 1}. [Vacío]")
-else:
-    print("No has tomado ningún elemento.")
+        print(f"{i + 1}. {elemento}: {caracteristica}")
+
+    respuesta = input('¿Desea tomar algo de la alacena? seleccione "Si" o "No": ')
+
+    if respuesta.lower() == 'si':
+        elementos_tomados = []
+        alacena_lista = list(alacena_cocina)
+        
+        while True:
+            seleccion = int(input("Seleccione el número del elemento que desea tomar (ingrese -1 para finalizar): "))
+            if seleccion == -1:
+                break
+            if 1 <= seleccion <= len(alacena_lista):
+                elemento_tomado = alacena_lista[seleccion - 1]
+                elementos_tomados.append(elemento_tomado)
+                alacena_lista[seleccion - 1] = (None, None)  # Llenar el espacio con vacío
+            else:
+                print("Selección no válida. Intente nuevamente.")
+        
+    
+        alacena_cocina = tuple(alacena_lista)
+        
+    
+        print("\nHas tomado los siguientes elementos:")
+        for elemento, caracteristica in elementos_tomados:
+            print(f"- {elemento}: {caracteristica}")
+        
+        print("\nElementos restantes en la alacena:")
+        for i, (elemento, caracteristica) in enumerate(alacena_cocina):
+            if elemento is not None:
+                print(f"{i + 1}. {elemento}: {caracteristica}")
+            else:
+                print(f"{i + 1}. [Vacío]")
+    else:
+        print("No has tomado ningún elemento.")
 """--------------------------------------------------------------------------------------------------------------------------"""    
 #main 
 
 
 inventario=[]
 personaje=Eleccion_Personaje()
-Inicio_Juego(personaje,matriz_living )
-Living(personaje,inventario, matriz_living, objetos_living)
+Inicio_Juego(personaje, inventario )
+Living(personaje,inventario)
