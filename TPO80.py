@@ -89,34 +89,41 @@ def Objetos_Cercanos_interactivos(personaje, inventario, nombre_habitacion):
         nueva_columna = columna_jugador + columna
 
         if 0 <= nueva_fila < len(matriz_habitacion) and 0 <= nueva_columna < len(matriz_habitacion[nueva_fila]): #si la nueva fila es menor al maximo de filas que hay (no cuentan las paredes) && si las columnas son menores al maximo de columnas en esa fila (no cuentan paredes)
-            if matriz_habitacion[nueva_fila][nueva_columna] != -1: #muestra todo lo que no sea una pared
+            if matriz_habitacion[nueva_fila][nueva_columna] != 0: #muestra todo lo que no sea una pared
                 if 0 <= nueva_fila < len(objetos_habitacion) and 0 <= nueva_columna < len(objetos_habitacion[nueva_fila]):
                     objeto = objetos_habitacion[nueva_fila][nueva_columna]
                     if objeto != 0:
                         objetos_interactivos.append(((nueva_fila, nueva_columna), objeto))
     print (objetos_interactivos)
     if objetos_interactivos :
+        
         print("\nObjetos cercanos con los que puedes interactuar:")
         for i, (coordenadas, nombre_objeto) in enumerate(objetos_interactivos):
             print(f"{i + 1}. {nombre_objeto} (fila: {coordenadas[0]}, columna: {coordenadas[1]})")
-        print(" Ver Objeto (1) || Agarrar Objeto (2)")
+    
+        print(" Ver Objeto (1) || Interactuar con Objeto (2)")
         try:
             accion=int(input (">"))
             if accion not in [1, 2]:
                 print("Opción no válida")
                 return
             
+
             indice_objeto = int(input("Elige el número del objeto: ")) -1
             if 0 <= indice_objeto < len(objetos_interactivos):
                 coordenadas_objeto, nombre_objeto = objetos_interactivos[indice_objeto]
                 if accion==1:
                     VerObjeto(personaje, nombre_objeto, nombre_habitacion)
                 elif accion==2:
-                    AgarrarObjeto(nombre_habitacion, nombre_objeto, inventario, coordenadas_objeto, objetos_habitacion)
+                    if nombre_objeto!= "closet":
+                        AgarrarObjeto(nombre_habitacion, nombre_objeto, inventario, coordenadas_objeto, objetos_habitacion)
+                    else: 
+                        Usar(nombre_objeto, nombre_habitacion, personaje, inventario)
             else:
                 print("Número de objeto inválido.")
         except ValueError:
             print("Por favor, ingresa un número.")
+        
     else:
         print("No hay objetos interesantes cerca.")
     return
@@ -147,7 +154,7 @@ def procesar_mensaje(mensaje):
     
     return mensaje_descifrado
 def Mover  (nombre_habitacion):
-    habitacion_actual= diccionario_matrices [nombre_habitacion]
+    habitacion_actual= diccionario_matrices[nombre_habitacion]
     ubicacion_personaje, coordenadas, direcciones =Ubicacion_Actual_Personaje(habitacion_actual)
     fila_jugador=ubicacion_personaje[0]
     col_jugador=ubicacion_personaje[1]
@@ -259,12 +266,26 @@ def AgarrarObjeto(nombre_habitacion, nombre_objeto, inventario, coordenadas_obje
                 print("No se puede guardar ese objeto en el inventario.")
         else:
             print("Ese objeto no se puede agarrar.")
-def Usar(nombre_objeto, habitacion_actual):
-    clave = f"{nombre_objeto}+{habitacion_actual}"
+def Usar(nombre_objeto, habitacion_actual, personaje, inventario,):
+    palabras=[nombre_objeto, habitacion_actual]
+    clave =" ".join(palabras)
+
+    acciones = diccionario_accciones_globales[clave]
     if clave not in diccionario_accciones_globales:
         print("Este objeto no tiene acciones disponibles.")
-        return
-    acciones = diccionario_accciones_globales[clave]
+        return  
+    elif clave=="closet":
+        print("Que queres hacer?")
+        print(" || ".join(acciones.keys())) #Muestra las acciones disponibles para el objeto
+        eleccion = input("> ").lower()
+        while eleccion not in acciones:
+            print("Opcion no valida")
+            eleccion = input(">").lower()    
+        if eleccion=="intentar abrir caja fuerte": #algunos objetos tienen acciones que son funciones
+            resultado=Cajas_Fuertes(ubicacion_personaje=(5,4),nombre_habitacion= "cuarto principal" )
+        else:
+            print(acciones[eleccion])
+
     print("Que queres hacer?")
     print(" || ".join(acciones.keys())) #Muestra las acciones disponibles para el objeto
     eleccion = input("> ").lower()
@@ -286,7 +307,7 @@ def Inventario(inventario, habitacion_actual):
         print(f"{i}. {objeto}") #imprime como una lista numerada
     eleccion = input("Que objeto queres usar?").lower()
     if eleccion in inventario:
-        Usar(eleccion, habitacion_actual)
+        Usar(eleccion, habitacion_actual, personaje, inventario)
     else:
         print("Etse objeto no esta en el inventario")
 def Mensajear():
@@ -330,22 +351,27 @@ def Living (inventario, ubicacion_personaje, personaje):
 
 def Patio(inventario, ubicacion_personaje, personaje):
     nombre_habitacion="patio"
+    print(f"\nEstás en el {nombre_habitacion}. Observas alrededor...")
     Opciones_Control_de_Personaje(personaje,inventario, nombre_habitacion )
     
 def Cuarto_Principal(inventario, ubicacion_personaje, personaje):
     nombre_habitacion="cuarto principal"
+    print(f"\nEstás en el {nombre_habitacion}. Observas alrededor...")
     Opciones_Control_de_Personaje(personaje,inventario, nombre_habitacion ) 
 
 def Oficina(inventario, ubicacion_personaje, personaje):
     nombre_habitacion="oficina"
+    print(f"\nEstás en el {nombre_habitacion}. Observas alrededor...")
     Opciones_Control_de_Personaje(personaje,inventario, nombre_habitacion )
 
 def Cocina(inventario, ubicacion_personaje, personaje):
    nombre_habitacion="cocina"
+   print(f"\nEstás en el {nombre_habitacion}. Observas alrededor...")
    Opciones_Control_de_Personaje(personaje,inventario, nombre_habitacion )
 
 def Baño(inventario, ubicacion_personaje, personaje):
     nombre_habitacion="baño"
+    print(f"\nEstás en el {nombre_habitacion}. Observas alrededor...")
     # Definir una tupla con los elementos del estante y sus características
     estante_baño = (
     ("Jabón", "líquido"),
@@ -436,7 +462,6 @@ def Baño(inventario, ubicacion_personaje, personaje):
             print("La operación no es válida.")
     else:
         print("Operación cancelada.")
-
 
 def mostrar_objetos(diccionario):
     for idx, elemento in enumerate(diccionario, 1): #index, enumera como lista
@@ -1174,7 +1199,7 @@ dicc_objetos_cuarto_principal={
     "closet": {
         'carla': "Un poco chico el closet, y muy desordenado!", #lo que ve Carla
        'gabriel': "Que buena coleccion de camisetas de futbol!", #lo que ve gabriel
-       'usar': False, # si el objeto puede usarse
+       'usar': True, # key closet cuarto principal
        'inventario': False, #si el objeto puede ser guardado en inventario o no  
     },
     "mesa de luz1": {
@@ -1383,57 +1408,62 @@ diccionario_objetos={
     "oficina": dicc_objetos_oficina,
 }
 diccionario_accciones_globales={
-    ("placa patio"): {
+    "placa patio": {
         'mover enredadera': "hay una placa detras de la enredadera",
         'leer': "\"Gracias por siempre empujarme a ser mejor\"",
         'empujar': "La placa se metio para dentro de la pared... y ese ruido? Parece como que se haya abierto una puerta",
         'tirar': "No puedo tirar de la placa, esta atornillada a la pared"
     },
-    ("banco patio"): {
+    "banco patio": {
         'sentarse': "Al fin puedo descansar un poco",
         'apreciar la vista sentado': "Wow, la enredadera si que esta crecida, lo mismo como los 2 arboles de limones, hay 3 lapidas y por algun motivo 3 monticulos de tierra nuevos...",
         'disociar': "...",
     },
-    ("llaves atras puerta living"): {
+    "llaves atras puerta living": {
         'guardar en inventario': inventario.append("llaves living"),
         'ver': "una llave roja, una electronica y una dorada", 
     },
-    ("escritorio oficina"): {
+    "escritorio oficina": {
         'abrir cajón': "El cajón está vacío... o eso parece.",
         'revisar': "Hay mucha basura y cosas viejas guardadas.",
     },
-    ("silla oficina"): {
+    "silla oficina": {
         'sentarse': "Girás un poco.",
         'moverse': "Te deslizás por la oficina como si fuera una pista de hielo.",
         'guardar en inventario': "No podés llevar la silla de la casa de tu amigo.",
         },
-    ("cuadro oficina"): {
+    "cuadro oficina": {
         'mirar': "Es un cuadro abstracto, con formas que parecen moverse si lo mirás mucho tiempo.",
         'tocar': "La pintura está seca, pero hay algo raro en el marco...",
         },
-    ("biblioteca oficina"): {
+    "biblioteca oficina": {
         'revisar libros': "Muchos libros de derecho, historia y... ¿una novela romántica?",
         'empujar': "¡Click! Algo se movió detrás...",
         },
-    ("puerta oculta oficina"): {
+    "puerta oculta oficina": {
         'abrir': "La biblioteca se corre revelando una puerta secreta.",
         'entrar': "Pasás por la puerta oculta hacia otra habitación...",
         },
-    ("pared oficina"): {
+    "pared oficina": {
         'golpear': "Suena hueco en algunas partes.",
         'mirar': "Pared blanca con manchas de humedad.",
         },
-    ("mesa cuarto principal"): {
+    "mesa cuarto principal": {
         "ver": "hay 3 anteojos de Tommy, 6 relojes de marca y 5 figuritas del mundial"        
         },
-    ("cama2 cuarto principal"): {
+    "cama2 cuarto principal": {
         "ver": "la esquina de la cama",    
         "mirar abajo de la cama": "esta una de las hojas del TP!",
         },
-    ("cama1 cuarto principal"): {
+    "closet cuarto principal": {
+        "ver": "mucho desorden pero hay una caja fuerte con 3 numeros",    
+        "intentar abrir caja fuerte": " ",
+        },
+    "cama1 cuarto principal": {
         "ver": "la esquina de la cama",   
         "levantar el colchon": "uyy que pesado... Que es eso?? Una hoja con estos dibujos? ⌚⚽🕶",
         },
+        
     ("mesa de luz1 cuarto principal"): {
         "abrir primer cajon": "A ver que hay... NONONONOOON aca no hay nada importante!!!",      
         "abrir segundo cajon": "algunos comics de Batman y unas revistas viejas",
@@ -1490,13 +1520,55 @@ diccionario_accciones_globales={
     },
 }
 
+
+def Cajas_Fuertes(ubicacion_personaje, nombre_habitacion):
+    if ubicacion_personaje==(5,6) and nombre_habitacion=="cuarto principal":
+        print("Hay una caja fuerte con un candado de 3 numeros, que queres hacer?")
+        print ("Ingresa los 3 numeros juntos, por ejemplo 123")
+        contraseña=int(input("Contraseña: "))
+        while contraseña!=653: #reloj, pelota, anteojos
+            print("Contraseña incorrecta, intenta de nuevo")
+            print("Quieres volver a intentar? Si/No")
+            eleccion=input(">").lower()
+            if eleccion=="si":
+               contraseña=int(input("Contraseña: ")) 
+            elif eleccion=="no":
+                print("Volviendo al cuarto principal")
+                return
+            else:
+                print("Respuesta no valida, volviendo al cuarto principal")
+                return
+        if contraseña==653:
+            print("Contraseña correcta, la caja fuerte se abre")
+            print ("encuentras una hoja del TP")
+        return
+    elif ubicacion_personaje==(1,4) and nombre_habitacion=="patio":
+        print("Hay una caja fuerte con un candado de 3 numeros, que queres hacer?")
+        print ("Ingresa los 3 numeros juntos, por ejemplo 123")
+        contraseña=int(input("Contraseña: "))
+        while contraseña!=236: #arboles, lapidas, lapidas+pozos
+            print("Contraseña incorrecta, intenta de nuevo")
+            print("Quieres volver a intentar? Si/No")
+            eleccion=input(">").lower()
+            if eleccion=="si":
+               contraseña=int(input("Contraseña: ")) 
+            elif eleccion=="no":
+                print("Volviendo al patio")
+                return
+            else:
+                print("Respuesta no valida, volviendo al patio")
+                return
+        if contraseña==236:
+            print("Contraseña correcta, la caja fuerte se abre")
+            print ("encuentras una hoja del TP")
+        return
+
 """--------------------------------------------------------------------------------------------------------------------------"""    
 #main 
 
 personaje=Eleccion_Personaje()
 ubicacion_personaje=Inicio_Juego(personaje, inventario )
 Living(inventario, ubicacion_personaje,personaje)
-
 
 
 
