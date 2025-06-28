@@ -1,0 +1,5 @@
+objetos_cocina = [["pared","pared","pared"],
+                  ["pared", "mesada", "comida perro" ,"heladera","pared"],
+                  ["pared","cocina",0 ,0 ,0],
+                  ["pared", "alacena", "mesada", "mesada", "pared"],
+                  ["pared", "pared", "pared",]]

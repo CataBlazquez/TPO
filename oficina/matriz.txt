@@ -1,0 +1,6 @@
+matriz_oficina=[[-1,-1,-1],
+                [-1,-1,-1,-1,-1],#paredes y escritorio
+                [-1,0,-1,0,-1], #paredes y silla
+                [-1,0,0,-1,-1],#paredes y biblioteca 
+                [-1,0,0,-1,2],#paredes y biblioteca con puerta oculta
+                [-1,2,-1],]

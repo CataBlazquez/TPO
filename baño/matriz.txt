@@ -1,0 +1,4 @@
+matriz_baño=[[-1,-1,-1],
+            [-1,-1,0,-1,-1],#pared, primera parte de la bañera, nada, inodoro, pared
+            [-1,-1,-1,0,2],#pared, segunda parte bañera, lavamanos, nada, puerta a living
+            [-1,-1,-1],] #pared, espejo, pared

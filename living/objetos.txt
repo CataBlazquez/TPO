@@ -1,0 +1,8 @@
+objetos_living=[[0,0,0,"cuadro",0,0,0,0],
+                [0,0,0,0,0,0,0,0],
+                ["chapa toilette",0,"alfombra","silla","mesa comedor","silla",0,0],
+                [0,0,"alfombra","silla","mesa comedor","silla",0,"cartel prohibido"],
+                ["Aca se hacen cosas ricas",0,"alfombra", 0,0,0,0,0],
+                ["perchero",0,0,0,"sillon","sillon",0,"cuadro"],
+                [0,"paraguero",0,0,0,0,0,0],
+                [0,0,"llaves atras puerta",0,"television","television",0,0],]

@@ -1,0 +1,6 @@
+objetos_oficina=[[-1,-1,-1],
+                [-1,-1,"escritorio",-1,-1],
+                [-1,0,"silla",0,-1], 
+                ["cuadro",0,0,-1,"biblioteca"],
+                [-1,0,0,-1,"biblioteca"],
+                [-1,2,-1],]

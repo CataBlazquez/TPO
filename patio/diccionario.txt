@@ -1,0 +1,69 @@
+dicc_objetos_patio={ 
+    "enredadera": {
+        'carla': "que linda enredadera🌿🌿, me encantaria que en mi casa haya una asi", #lo que ve Carla
+       'gabriel': "una planta que cubre la pared🌿🌿", #lo que ve gabriel
+       'usar': False, # si el objeto puede usarse
+       'inventario': False, #si el objeto puede ser guardado en inventario o no  
+    },
+    "pared": {
+        'carla': "ay alguien deberia darle una mano de pintura a esta pared",
+       'gabriel': "una pared descascarada",
+       'usar': False, 
+       'inventario': False,
+    }, 
+    "cucha perro": {
+        'carla': "aww la casita de firu",
+       'gabriel': "alta home la de firu",
+       'usar': False, 
+       'inventario': False,
+    }, 
+    "arbol":{
+        'carla': "un arbol de limones frescos🌲🍋",
+        'gabriel': "un arbol de limones frescos🌲🍋",
+        'usar': False,
+        'inventario':False, 
+    },
+    "pozo": {
+        'carla': "una gran montaña de tierra... parece que alguien planto algo hace poco.",
+        'gabriel': "un monticulo de tierra. Parece que alguien enterro algo hace poco tiempo.",
+        'usar': False,
+        'inventario':False, 
+    },
+    "cobertizo": {
+        'carla': "un cobertizo. Parece cerrado pero no tiene manija... que raro ", #adentro del cobertizo hay una caja con un candado numerico
+        'gabriel': "un cobertizo. No tiene manija, pero deberia poder abrirse ",
+        'usar': False, #cuando se accione la placa, se cambiara a true y podra entrar
+        'inventario':False, 
+    },
+    "lapida1": {
+        'carla': "Una lapida? Muy creepy para un patio... A ver que dice... 🪦Ruben Grabal 29/08/1934-18/10/2009 \"Amado padre, marido y segundo lugar de la mejor pizza del mundo mundial\" ", 
+        'gabriel': "Eso es una lapida?? 😳😳,🪦Ruben Grabal 29/08/1934-18/10/2009 \" Amado padre, marido y segundo lugar de la mejor pizza del mundo mundial\" ",
+        'usar': False,
+        'inventario':False, 
+    },
+    "placa": {
+        'carla': "Que es eso? Detras de la enredadera? ", 
+        'gabriel': "Hay algo detras de la enredadera? ",
+        'usar': True, #placa patio es el key que hay que usar
+        'inventario':False, 
+    },
+    "banco": {
+        'carla': "Un banco para poder sentarme un rato y mirar todo el patio ", 
+        'gabriel': "Un banco para sentarse y mirar todo el patio",
+        'usar': True, #banco patio es el key que hay que usar
+        'inventario':False, 
+    },
+    "lapida2": {
+        'carla': "Otra lapida?? A ver que dice esta...🪦 Maria Dolores Grimaldi de Grabal 7/10/1939-25/06/2014 \" Amada madre y ganadora de la mejor pizza del mundo mundial \" ", 
+        'gabriel': "Otra lapida?? A ver que dice...🪦 Maria Dolores Grimaldi de Grabal 7/10/1939-25/06/2014 \" Amada madre y ganadora de la mejor pizza del mundo mundial \" ", 
+        'usar': False,
+        'inventario':False, 
+    },
+    "lapida3": {
+        'carla': "Otra lapida mas? Pero que es esto? El cementerio de Chacarita? A ver que dice esta...🪦 Pedro Grabal 06/10/1987- 12/05/2007 \"Amado hermano y catador de pizzas \" ", 
+        'gabriel': "Otra lapida mas? Esto no parece muy legal que digamos... A ver que dice...🪦 Pedro Grabal 06/10/1987- 12/05/2007 \"Amado hermano y catador de pizzas \" ", 
+        'usar': False,
+        'inventario':False, 
+    },
+    
+}

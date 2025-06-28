@@ -1,0 +1,7 @@
+objetos_cuarto_principal=[["pared","pared","pared","pared","pared","pared","pared"],#pared del cuarto
+                        ["pared","mesa de luz1","cama","cama","cama","mesa de luz2","pared"],#pared, mesa de luz, camax3, mesa de luz, pared
+                        ["pared",0,"cama","cama","cama",0,"pared"],
+                        ["pared",0,"cama1","cama","cama2",0,"pared"],
+                        ["pared","mesa",0,0,0,0,"pared"],#pared, mesa de maquillaje, vacio
+                        ["pared","mesa","zapatero","zapatero", 0,0,"closet"],#pared, mesa de maquillaje, zapatero, vacio y pared
+                        ["pared","pared","pared","pared",2,"pared","pared"],]#pared y puerta a living

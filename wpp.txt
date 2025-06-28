@@ -1,0 +1,7 @@
+matriz_cuarto_principal=[[-1,-1,-1,-1,-1],#pared del cuarto
+                        [-1,-1,-1,-1,-1,-1,-1],#pared, mesa de luz, camax3, mesa de luz, pared
+                        [-1,0,-1,-1,-1,0,-1],
+                        [-1,0,-1,-1,-1,0,-1],
+                        [-1,-1,0,0,0,0,-1],#pared, mesa de maquillaje, vacio
+                        [-1,-1,-1,-1, 0,0,-1],#pared, mesa de maquillaje, zapatero, vacio y pared
+                        [-1,-1,-1,2,-1],]#pared y puerta a living

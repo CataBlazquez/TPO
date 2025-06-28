@@ -1,0 +1,5 @@
+matriz_cocina=[[-1,-1,-1],
+               [-1,0,0,-1,-1],#pared, vacio, vacio, heladera, pared
+               [-1,-1,0,0,2], #pared, horno y puerta a living
+               [-1,0,0,0,-1],
+               [-1,-1,-1],]

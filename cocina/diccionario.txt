@@ -1,0 +1,39 @@
+dicc_objetos_cocina = {
+    "pared": {
+        "carla": "Carla observa la pared, pensando en cómo quedaría un mural de recetas.",
+        "gabriel": "Gabriel mira la pared, buscando manchas de salsa o humedad.",
+        "usar": False,
+        "inventario": False,
+    },
+    "mesada": {
+        "carla": "Carla revisa la mesada, buscando utensilios para preparar algo dulce.",
+        "gabriel": "Gabriel limpia la mesada para dejarla lista para cocinar.",
+        "usar": True, #key mesada cocina
+        "inventario": False,
+    },
+    "comida perro": {
+        "carla": "Carla sonríe al ver el plato de Firulais, pensando si la comida será gourmet.",
+        "gabriel": "Gabriel revisa si Firulais ya comió o necesita más comida.",
+        "usar": True, #key comida perro cocina
+        "inventario": False,
+    },
+    "heladera": {
+        "carla": "Carla abre la heladera buscando algo fresco para un snack.",
+        "gabriel": "Gabriel revisa la heladera para ver si hay suficiente proteína.",
+        "usar": True, #key heladera cocina
+        "inventario": False,
+    },
+    "cocina": {
+        "carla": "Carla piensa en preparar una receta nueva en la cocina.",
+        "gabriel": "Gabriel prende la hornalla para cocinar huevos.",
+        "usar": True, #key cocina cocina
+        "inventario": False,
+    },
+    "alacena": {
+        "carla": "Carla revisa la alacena buscando ingredientes para una torta.",
+        "gabriel": "Gabriel busca arroz y fideos en la alacena.",
+        "usar": True, # key alacena cocina
+        "inventario": False,
+    },
+    
+}

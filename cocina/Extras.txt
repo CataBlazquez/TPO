@@ -1,0 +1,258 @@
+
+dicc_objetos_heladera_cocina = {
+    "Leche": {
+        "carla": "Carla piensa en hacerse un licuado con la leche.",
+        "gabriel": "Gabriel revisa si la leche tiene suficiente proteína.",
+        "usar": True,
+        "inventario": False,
+    },
+    "Huevos": {
+        "carla": "Carla imagina una tortilla para el desayuno.",
+        "gabriel": "Gabriel cuenta los huevos para ver si puede hacer omelette.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Queso": {
+        "carla": "Carla piensa en preparar una picada con el queso.",
+        "gabriel": "Gabriel corta una feta de queso para su sándwich.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Manteca": {
+        "carla": "Carla busca la manteca para untar unas tostadas.",
+        "gabriel": "Gabriel derrite un poco de manteca para cocinar.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Jugo de naranja": {
+        "carla": "Carla se sirve un vaso de jugo bien frío.",
+        "gabriel": "Gabriel toma jugo para hidratarse después de entrenar.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Frutas": {
+        "carla": "Carla elige una manzana para una merienda saludable.",
+        "gabriel": "Gabriel come una naranja para recuperar energía.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Sobras de comida": {
+        "carla": "Carla revisa si las sobras sirven para un almuerzo rápido.",
+        "gabriel": "Gabriel calienta las sobras para no perder tiempo cocinando.",
+        "usar": True,
+        "inventario": False,
+    },
+    "Agua mineral": {
+        "carla": "Carla se sirve un vaso de agua bien fría.",
+        "gabriel": "Gabriel toma agua para mantenerse hidratado.",
+        "usar": True,
+        "inventario": True,
+    },
+}
+acciones_generales_heladera_cocina = {
+    "Leche": {
+        'revisar': "Una bolsa de leche abierta.",
+        'usar': "Te servís un vaso de leche.",
+    },
+    "Huevos": {
+        'revisar': "Media docena de huevos.",
+        'usar': "Usás los huevos para cocinar.",
+    },
+    "Queso": {
+        'revisar': "Un trozo de queso cremoso.",
+        'usar': "Cortás un poco de queso.",
+    },
+    "Manteca": {
+        'revisar': "Un poco de manteca en su envoltorio.",
+        'usar': "Usás la manteca para untar o cocinar.",
+    },
+    "Jugo de naranja": {
+        'revisar': "Una botella de jugo de naranja.",
+        'usar': "Te servís un vaso de jugo.",
+    },
+    "Frutas": {
+        'revisar': "Manzanas y naranjas frescas.",
+        'comer': "Comés una fruta.",
+    },
+    "Sobras de comida": {
+        'revisar': "Un tupper con sobras de la cena de anoche.",
+        'comer': "Calentás y comés las sobras.",
+    },
+    "Agua mineral": {
+        'revisar': "Una botella de agua mineral fría.",
+        'usar': "Te servís un poco de agua.",
+    },
+}
+dicc_objetos_alacena_cocina = {
+    "Aceite de oliva": {
+        "carla": "Carla piensa en usar el aceite de oliva para una ensalada gourmet.",
+        "gabriel": "Gabriel revisa si el aceite sirve para cocinar pollo.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Sal fina": {
+        "carla": "Carla agrega un poco de sal fina a su receta.",
+        "gabriel": "Gabriel revisa si hay suficiente sal para sazonar.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Azúcar rubia": {
+        "carla": "Carla usa el azúcar rubia para endulzar su café.",
+        "gabriel": "Gabriel piensa en preparar avena con azúcar rubia.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Harina 000": {
+        "carla": "Carla planea hacer una torta con la harina 000.",
+        "gabriel": "Gabriel revisa si hay harina suficiente para panqueques.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Arroz largo fino": {
+        "carla": "Carla piensa en preparar una ensalada de arroz.",
+        "gabriel": "Gabriel cocina arroz para acompañar el pollo.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Fideos tirabuzón": {
+        "carla": "Carla elige los fideos tirabuzón para una pasta rápida.",
+        "gabriel": "Gabriel hierve los fideos para la cena.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Lentejas secas": {
+        "carla": "Carla prepara una sopa de lentejas.",
+        "gabriel": "Gabriel cocina lentejas para sumar proteína.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Café instantáneo": {
+        "carla": "Carla se prepara un café instantáneo para la tarde.",
+        "gabriel": "Gabriel toma café para despertarse.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Té verde": {
+        "carla": "Carla disfruta de una taza de té verde.",
+        "gabriel": "Gabriel prueba el té verde aunque prefiere café.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Yerba con palo": {
+        "carla": "Carla prepara un mate con la yerba.",
+        "gabriel": "Gabriel ceba mate para compartir.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Galletitas dulces": {
+        "carla": "Carla come unas galletitas dulces con su té.",
+        "gabriel": "Gabriel se come unas galletitas de postre.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Cacao en polvo": {
+        "carla": "Carla usa el cacao en polvo para hacer chocolatada.",
+        "gabriel": "Gabriel mezcla cacao en polvo con leche.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Mermelada de frutilla": {
+        "carla": "Carla unta mermelada de frutilla en una tostada.",
+        "gabriel": "Gabriel agrega mermelada a su pan integral.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Enlatados atún": {
+        "carla": "Carla abre una lata de atún para una ensalada.",
+        "gabriel": "Gabriel come atún directo de la lata.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Especias orégano": {
+        "carla": "Carla espolvorea orégano en su pizza casera.",
+        "gabriel": "Gabriel usa orégano para condimentar la comida.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Pan integral": {
+        "carla": "Carla prepara una tostada de pan integral.",
+        "gabriel": "Gabriel come pan integral con queso.",
+        "usar": True,
+        "inventario": True,
+    },
+    "Servilletas doble hoja": {
+        "carla": "Carla usa una servilleta para limpiar la mesa.",
+        "gabriel": "Gabriel agarra una servilleta para no ensuciarse.",
+        "usar": True,
+        "inventario": True,
+    },
+}
+acciones_generales_alacena_cocina = {
+    "Aceite de oliva": {
+        'revisar': "Una botella de aceite de oliva, casi llena.",
+        'usar': "Podés usar el aceite para cocinar.",
+    },
+    "Sal fina": {
+        'revisar': "Un paquete de sal fina, bien cerrado.",
+        'usar': "Podés usar la sal para sazonar la comida.",
+    },
+    "Azúcar rubia": {
+        'revisar': "Un frasco con azúcar rubia.",
+        'usar': "Podés usar el azúcar para endulzar.",
+    },
+    "Harina 000": {
+        'revisar': "Un paquete de harina 000.",
+        'usar': "Podés usar la harina para hacer masa.",
+    },
+    "Arroz largo fino": {
+        'revisar': "Un paquete de arroz largo fino.",
+        'usar': "Podés cocinar arroz.",
+    },
+    "Fideos tirabuzón": {
+        'revisar': "Un paquete de fideos tirabuzón.",
+        'usar': "Podés hervir los fideos.",
+    },
+    "Lentejas secas": {
+        'revisar': "Un paquete de lentejas secas.",
+        'usar': "Podés cocinar las lentejas.",
+    },
+    "Café instantáneo": {
+        'revisar': "Un frasco de café instantáneo.",
+        'usar': "Podés preparar café.",
+    },
+    "Té verde": {
+        'revisar': "Un paquete de té verde.",
+        'usar': "Podés preparar té.",
+    },
+    "Yerba con palo": {
+        'revisar': "Un paquete de yerba con palo.",
+        'usar': "Podés preparar un mate.",
+    },
+    "Galletitas dulces": {
+        'revisar': "Un paquete de galletitas dulces.",
+        'comer': "Comés unas galletitas.",
+    },
+    "Cacao en polvo": {
+        'revisar': "Un frasco de cacao en polvo.",
+        'usar': "Podés preparar chocolate.",
+    },
+    "Mermelada de frutilla": {
+        'revisar': "Un frasco de mermelada de frutilla.",
+        'usar': "Podés untar la mermelada en pan.",
+    },
+    "Enlatados atún": {
+        'revisar': "Una lata de atún.",
+        'abrir': "Abrís la lata de atún.",
+    },
+    "Especias orégano": {
+        'revisar': "Un frasco de orégano.",
+        'usar': "Podés usar el orégano para condimentar.",
+    },
+    "Pan integral": {
+        'revisar': "Un paquete de pan integral.",
+        'comer': "Comés una rebanada de pan.",
+    },
+    "Servilletas doble hoja": {
+        'revisar': "Un paquete de servilletas doble hoja.",
+        'usar': "Podés usar una servilleta.",
+    },

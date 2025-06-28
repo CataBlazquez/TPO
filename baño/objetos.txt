@@ -1,0 +1,6 @@
+objetos_baño = [
+                ["llave ducha", "espejo", -1],
+                [-1, "bañera", "lavamanos" ,0 , "inodoro", -1],
+                [-1, "bañera", 0 , 0 , -1],
+                [-1,2,"estante"],
+                ]

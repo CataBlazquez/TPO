@@ -1,0 +1,6 @@
+objetos_patio=[["enredadera","pared","pared","pared"],
+                      ["enredadera","cucha perro","arbol","pozo","cobertizo", "pared"],
+                      ["puerta",0,"lapida1","arbol",0,"pared"],
+                      ["placa","banco","pozo","lapida2",0,"pared"],
+                      ["enredadera","lapida3",0,0,"pozo","pared"],
+                      ["enredadera","enredadera","pared","pared"],]
