@@ -1,9 +1,6 @@
 # TPO
 
 Integrantes:
-Solange Laura Limachi Barra
-Facundo Ezequiel Arnaudo
-Ana María Martínez Pérez
 Catalina Micaela Blazquez
 
 Propósito del documento
