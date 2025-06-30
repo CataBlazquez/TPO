@@ -1,0 +1,111 @@
+{
+  "placa patio": {
+    "mover enredadera": "hay una placa detras de la enredadera",
+    "leer": "\"Gracias por siempre empujarme a ser mejor\"",
+    "empujar": "La placa se metio para dentro de la pared... y ese ruido? Parece como que se haya abierto una puerta",
+    "tirar": "No puedo tirar de la placa, esta atornillada a la pared"
+  },
+  "banco patio": {
+    "sentarse": "Al fin puedo descansar un poco",
+    "apreciar la vista sentado": "Wow, la enredadera si que esta crecida, lo mismo como los 2 arboles de limones, hay 3 lapidas y por algun motivo 3 monticulos de tierra nuevos...",
+    "disociar": "..."
+  },
+  "llaves atras puerta living": {
+    "guardar en inventario": "append_llaves_living",
+    "ver": "una llave roja, una electronica y una dorada"
+  },
+  "escritorio oficina": {
+    "abrir cajón": "El cajón está vacío... o eso parece.",
+    "revisar": "Hay mucha basura y cosas viejas guardadas."
+  },
+  "silla oficina": {
+    "sentarse": "Girás un poco.",
+    "moverse": "Te deslizás por la oficina como si fuera una pista de hielo.",
+    "guardar en inventario": "No podés llevar la silla de la casa de tu amigo."
+  },
+  "cuadro oficina": {
+    "mirar": "Es un cuadro abstracto, con formas que parecen moverse si lo mirás mucho tiempo.",
+    "tocar": "La pintura está seca, pero hay algo raro en el marco..."
+  },
+  "biblioteca oficina": {
+    "revisar libros": "Muchos libros de derecho, historia y... ¿una novela romántica?",
+    "empujar": "¡Click! Algo se movió detrás..."
+  },
+  "puerta oculta oficina": {
+    "abrir": "La biblioteca se corre revelando una puerta secreta.",
+    "entrar": "Pasás por la puerta oculta hacia otra habitación..."
+  },
+  "pared oficina": {
+    "golpear": "Suena hueco en algunas partes.",
+    "mirar": "Pared blanca con manchas de humedad."
+  },
+  "mesa cuarto principal": {
+    "ver": "hay 3 anteojos de Tommy, 6 relojes de marca y 5 figuritas del mundial"
+  },
+  "cama2 cuarto principal": {
+    "ver": "la esquina de la cama",
+    "mirar abajo de la cama": "esta una de las hojas del TP!"
+  },
+  "closet cuarto principal": {
+    "ver": "mucho desorden pero hay una caja fuerte con 3 numeros",
+    "intentar abrir caja fuerte": " "
+  },
+  "cama1 cuarto principal": {
+    "ver": "la esquina de la cama",
+    "levantar el colchon": "uyy que pesado... Que es eso?? Una hoja con estos dibujos? ⌚⚽🕶"
+  },
+  "mesa de luz1 cuarto principal": {
+    "abrir primer cajon": "A ver que hay... NONONONOOON aca no hay nada importante!!!",
+    "abrir segundo cajon": "algunos comics de Batman y unas revistas viejas"
+  },
+  "mesa de luz2 cuarto principal": {
+    "abrir primer cajon": "Que miedo abrir los cajones de la mesa de luz de alguien... Ah esta bien, solo hay unas flores y un rosario",
+    "abrir segundo cajon": "Una caja fuerte... que raro, tiene 3 numeros"
+  },
+  "mesada cocina": {
+    "revisar": "Hay algunos utensilios y migas de pan sobre la mesada.",
+    "limpiar": "Limpiás la mesada, ahora está reluciente."
+  },
+  "comida perro cocina": {
+    "revisar": "Un plato con comida para Firulais.",
+    "servir": "Le servís comida a Firulais. ¡Está feliz!"
+  },
+  "heladera cocina": {
+    "abrir": "Abrís la heladera. Hay algunas cosas para picar.",
+    "revisar": "Ves leche, huevos y un poco de queso."
+  },
+  "cocina cocina": {
+    "prender": "Encendés la hornalla, lista para cocinar.",
+    "revisar": "La cocina está limpia y lista para usar."
+  },
+  "alacena cocina": {
+    "abrir": "Abrís la alacena y ves varios alimentos.",
+    "revisar": "Hay paquetes de arroz, fideos, azúcar y más.",
+    "tomar": "Podés tomar algo de la alacena."
+  },
+  "llave ducha baño": {
+    "abrir": "Abrís la llave de la ducha y sale agua.",
+    "cerrar": "Cerrás la llave de la ducha."
+  },
+  "espejo baño": {
+    "mirar": "Te ves reflejado en el espejo.",
+    "limpiar": "Limpiás el espejo y queda reluciente."
+  },
+  "bañera baño": {
+    "llenar": "Llenás la bañera con agua caliente.",
+    "vaciar": "Vaciás la bañera."
+  },
+  "lavamanos baño": {
+    "usar": "Usás el lavamanos para lavarte.",
+    "revisar": "El lavamanos está limpio y tiene jabón."
+  },
+  "inodoro baño": {
+    "usar": "Usás el inodoro.",
+    "revisar": "El inodoro está limpio y tiene papel."
+  },
+  "estante baño": {
+    "abrir": "Abrís el estante y ves varios productos.",
+    "revisar": "Hay cremas, perfumes y otros artículos de higiene.",
+    "tomar": "Podés tomar algo del estante."
+  }
+}

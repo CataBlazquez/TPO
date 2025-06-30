@@ -1,0 +1,74 @@
+{
+  "cuadro": {
+    "carla": "*Carla analiza el cuadro buscando detalles estéticos y si podría ser un buen fondo para sus fotos.*",
+    "gabriel": "*Gabriel mira el cuadro sin mucho interés, pensando en si tendrá suficientes calorías para su próxima rutina.*",
+    "usar": false,
+    "inventario": false
+  },
+  "cucha perro": {
+    "carla": "*Carla se acerca a la cucha, pensando si Firulais tendrá algún secreto de belleza canino.*",
+    "gabriel": "Gabriel revisa la cucha por si acaso Firulais escondió alguna barrita de proteína.",
+    "usar": false,
+    "inventario": false
+  },
+  "chapa toilette": {
+    "carla": "Una chapa... quizás tenga un estilo vintage interesante para una storie de Insta.",
+    "gabriel": "Gabriel ignora la chapa, enfocado en encontrar algo más útil.",
+    "usar": false,
+    "inventario": false
+  },
+  "alfombra": {
+    "carla": "Que linda alfombra",
+    "gabriel": "Una alfombra comun",
+    "usar": true,
+    "inventario": false
+  },
+  "silla": {
+    "carla": "*Carla evalúa si la silla es cómoda para tomarse una selfie.*",
+    "gabriel": "Gabriel prueba la firmeza de la silla.",
+    "usar": false,
+    "inventario": false
+  },
+  "mesa comedor": {
+    "carla": "*Carla se pregunta si la mesa sería un buen lugar para un unboxing.*",
+    "gabriel": "Gabriel se pregunta si la mesa será lo suficientemente resistente para apoyar pesas.",
+    "usar": false,
+    "inventario": false
+  },
+  "Cartel: 'Aca se hacen cosas ricas'": {
+    "carla": "Mmm, quizás haya algún snack rico y me tome un break.",
+    "gabriel": "Gabriel olfatea el aire: '¿Proteína casera?'",
+    "usar": false,
+    "inventario": false
+  },
+  "perchero": {
+    "carla": "*Carla revisa las prendas, buscando inspiración para su próximo outfit.*",
+    "gabriel": "Gabriel mira el perchero, buscando alguna toalla para secarse el sudor.",
+    "usar": false,
+    "inventario": false
+  },
+  "sillon": {
+    "carla": "Ay, este es como el sillon que hice canje por una storie en insta!",
+    "gabriel": "Gabriel se sienta brevemente, evaluando si el sillón ofrece buen soporte lumbar.",
+    "usar": false,
+    "inventario": false
+  },
+  "paraguero": {
+    "carla": "*Carla mira los paraguas, pensando si alguno podría ser un accesorio de moda inesperado.*",
+    "gabriel": "Gabriel mira los paraguas, pensando si alguno podría servir como improvisada barra de dominadas",
+    "usar": false,
+    "inventario": false
+  },
+  "llaves atras puerta": {
+    "carla": "*Carla examina el llavero buscando alguna llave que parezca importante o tenga un diseño interesante.*",
+    "gabriel": "Gabriel mira las llaves sin darle mucha importancia.",
+    "usar": false,
+    "inventario": false
+  },
+  "television": {
+    "carla": "*Carla mira la televisión apagada, pensando en qué serie estará de moda*",
+    "gabriel": "Gabriel mira la televisión apagada, pensando en qué canal pasarán competencias de fuerza.",
+    "usar": false,
+    "inventario": false
+  }
+}

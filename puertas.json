@@ -1,0 +1,78 @@
+{
+  "living": {
+    "dormitorio": {
+      "coordenada origen": [0, 1],
+      "habitacion destino": "dormitorio",
+      "coordenada destino": [5, 5],
+      "estado puerta": "abierta"
+    },
+    "afuera": {
+      "coordenada origen": [7, 2],
+      "habitacion destino": "afuera"
+    },
+    "oficina": {
+      "coordenada origen": [0, 4],
+      "habitacion destino": "oficina",
+      "coordenada destino": [4, 2],
+      "estado puerta": "abierta"
+    },
+    "baño": {
+      "coordenada origen": [2, 0],
+      "habitacion destino": "baño",
+      "coordenada destino": [2, 3],
+      "estado puerta": "abierta"
+    },
+    "cocina": {
+      "coordenada origen": [4, 0],
+      "habitacion destino": "cocina",
+      "coordenada destino": [2, 3],
+      "estado puerta": "abierta"
+    }
+  },
+  "dormitorio": {
+    "living": {
+      "coordenada origen": [5, 4],
+      "habitacion destino": "living",
+      "coordenada destino": [1, 2],
+      "estado puerta": "abierta"
+    }
+  },
+  "baño": {
+    "living": {
+      "coordenada origen": [2, 4],
+      "habitacion destino": "living",
+      "coordenada destino": [2, 1],
+      "estado puerta": "abierta"
+    }
+  },
+  "cocina": {
+    "living": {
+      "coordenada origen": [2, 4],
+      "habitacion destino": "living",
+      "coordenada destino": [4, 1],
+      "estado puerta": "abierta"
+    }
+  },
+  "oficina": {
+    "living": {
+      "coordenada origen": [5, 2],
+      "habitacion destino": "living",
+      "coordenada destino": [1, 5],
+      "estado puerta": "abierta"
+    },
+    "patio": {
+      "coordenada origen": [3, 4],
+      "habitacion destino": "patio",
+      "coordenada destino": [2, 1],
+      "estado puerta": "oculta"
+    }
+  },
+  "patio": {
+    "oficina": {
+      "coordenada origen": [2, 0],
+      "habitacion destino": "oficina",
+      "coordenada destino": [3, 2],
+      "estado puerta": "abierta"
+    }
+  }
+}
