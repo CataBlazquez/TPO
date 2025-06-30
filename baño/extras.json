@@ -1,0 +1,122 @@
+{
+  "Shampoo": {
+    "revisar": "Una botella de shampoo casi llena.",
+    "usar": "Te lavás el pelo con shampoo."
+  },
+  "Acondicionador": {
+    "revisar": "Una botella de acondicionador.",
+    "usar": "Usás el acondicionador para suavizar el pelo."
+  },
+  "Jabón": {
+    "revisar": "Una pastilla de jabón perfumado.",
+    "usar": "Te lavás las manos con jabón."
+  },
+  "Crema hidratante": {
+    "revisar": "Un pote de crema hidratante.",
+    "usar": "Te ponés crema en las manos."
+  },
+  "Perfume": {
+    "revisar": "Un frasco de perfume.",
+    "usar": "Te perfumás un poco."
+  },
+  "Desodorante": {
+    "revisar": "Un desodorante en aerosol.",
+    "usar": "Usás el desodorante."
+  },
+  "Toalla": {
+    "revisar": "Una toalla limpia y suave.",
+    "usar": "Te secás con la toalla."
+  },
+  "Cepillo de dientes": {
+    "revisar": "Un cepillo de dientes de cerdas suaves.",
+    "usar": "Te lavás los dientes."
+  },
+  "Pasta dental": {
+    "revisar": "Un tubo de pasta dental casi vacío.",
+    "usar": "Ponés pasta dental en tu cepillo y te lavás los dientes."
+  }
+}
+
+{
+  "llave ducha": {
+    "abrir": "Abrís la llave de la ducha y sale agua.",
+    "cerrar": "Cerrás la llave de la ducha."
+  },
+  "espejo": {
+    "mirar": "Te ves reflejado en el espejo.",
+    "limpiar": "Limpiás el espejo y queda reluciente."
+  },
+  "bañera": {
+    "llenar": "Llenás la bañera con agua caliente.",
+    "vaciar": "Vaciás la bañera."
+  },
+  "lavamanos": {
+    "usar": "Usás el lavamanos para lavarte.",
+    "revisar": "El lavamanos está limpio y tiene jabón."
+  },
+  "inodoro": {
+    "usar": "Usás el inodoro.",
+    "revisar": "El inodoro está limpio y tiene papel."
+  },
+  "estante": {
+    "abrir": "Abrís el estante y ves varios productos.",
+    "revisar": "Hay cremas, perfumes y otros artículos de higiene.",
+    "tomar": "Podés tomar algo del estante."
+  }
+}
+{
+  "Shampoo": {
+    "carla": "Carla elige el shampoo con aroma a frutos rojos.",
+    "gabriel": "Gabriel busca el shampoo anticaspa.",
+    "usar": true,
+    "inventario": true
+  },
+  "Acondicionador": {
+    "carla": "Carla usa el acondicionador para dejar su pelo suave.",
+    "gabriel": "Gabriel no suele usar acondicionador, pero lo mira curioso.",
+    "usar": true,
+    "inventario": true
+  },
+  "Jabón": {
+    "carla": "Carla toma el jabón perfumado.",
+    "gabriel": "Gabriel agarra el jabón para lavarse las manos.",
+    "usar": true,
+    "inventario": true
+  },
+  "Crema hidratante": {
+    "carla": "Carla se pone un poco de crema hidratante en las manos.",
+    "gabriel": "Gabriel se pregunta si la crema sirve para después de afeitarse.",
+    "usar": true,
+    "inventario": true
+  },
+  "Perfume": {
+    "carla": "Carla se pone un poco de perfume.",
+    "gabriel": "Gabriel huele el perfume y decide no usarlo.",
+    "usar": true,
+    "inventario": true
+  },
+  "Desodorante": {
+    "carla": "Carla revisa si el desodorante es antitranspirante.",
+    "gabriel": "Gabriel usa el desodorante después de entrenar.",
+    "usar": true,
+    "inventario": true
+  },
+  "Toalla": {
+    "carla": "Carla toma una toalla limpia.",
+    "gabriel": "Gabriel agarra una toalla para secarse.",
+    "usar": true,
+    "inventario": true
+  },
+  "Cepillo de dientes": {
+    "carla": "Carla busca su cepillo de dientes rosa.",
+    "gabriel": "Gabriel revisa si su cepillo está seco.",
+    "usar": true,
+    "inventario": true
+  },
+  "Pasta dental": {
+    "carla": "Carla pone un poco de pasta dental en su cepillo.",
+    "gabriel": "Gabriel revisa si queda suficiente pasta dental.",
+    "usar": true,
+    "inventario": true
+  }
+}

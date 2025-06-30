@@ -1,0 +1,38 @@
+{
+  "pared": {
+    "carla": "Que horrible color tiene la pared",
+    "gabriel": "la pared tiene manchas de humedad...",
+    "usar": false,
+    "inventario": false
+  },
+  "escritorio": {
+    "carla": "Este escritorio es parecido al de papá",
+    "gabriel": "Podría poner una PC Gamer y viciar toda la noche",
+    "usar": true,
+    "inventario": false
+  },
+  "silla": {
+    "carla": "una silla cómoda, ideal para hacer vivos en tiktok mientras me maquillo",
+    "gabriel": "una silla giratoria con ruedas... puedo usarla para moverme de un lado a otro",
+    "usar": true,
+    "inventario": false
+  },
+  "cuadro": {
+    "carla": "un cuadro abstracto que no entiendo pero me gusta. Creo que podría pintar uno igual",
+    "gabriel": "una pintura moderna, probablemente sea muy cara",
+    "usar": false,
+    "inventario": false
+  },
+  "biblioteca": {
+    "carla": "¿No hay revistas de moda o maquillaje en esta biblioteca?",
+    "gabriel": "No veo ningún comic o manga",
+    "usar": true,
+    "inventario": false
+  },
+  "puerta oculta": {
+    "carla": "parece una biblioteca... pero hay algo raro en ella",
+    "gabriel": "hay una rendija, como si se pudiera abrir...",
+    "usar": true,
+    "inventario": false
+  }
+}

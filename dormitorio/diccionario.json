@@ -1,0 +1,56 @@
+{
+  "pared": {
+    "carla": "me encanta el color de la pared, es como un verde musgo",
+    "gabriel": "una pared nomas",
+    "usar": false,
+    "inventario": false
+  },
+  "closet": {
+    "carla": "Un poco chico el closet, y muy desordenado!",
+    "gabriel": "Que buena coleccion de camisetas de futbol!",
+    "usar": true,
+    "inventario": false
+  },
+  "mesa de luz1": {
+    "carla": "una mesa de luz con 2 cajones, estilo nordico, del lado izquierdo de la cama",
+    "gabriel": "una mesa de luz con 2 cajones, del lado izquierdo de la cama",
+    "usar": true,
+    "inventario": false
+  },
+  "mesa de luz2": {
+    "carla": "una mesa de luz con 2 cajones, estilo nordico, del lado derecho de la cama",
+    "gabriel": "una mesa de luz con 2 cajones, del lado derecho de la cama",
+    "usar": true,
+    "inventario": false
+  },
+  "cama": {
+    "carla": "una cama queen, sin hacer, cuanto se mueve el dueño de casa eh",
+    "gabriel": "una cama grande...jajaj ni el dueño de casa hace la cama, con razon es mi amigo",
+    "usar": false,
+    "inventario": false
+  },
+  "cama1": {
+    "carla": "la esquina inferior izquierda de la cama... parece que hubiera algo entre el somier y el colchon",
+    "gabriel": "la esquina inferior izquierda de la cama... parece que hubiera algo entre la cama y el colchon",
+    "usar": true,
+    "inventario": false
+  },
+  "cama2": {
+    "carla": "la esquina inferior derecha de la cama... parece que hubiera algo abajo de la cama... un monstruo? jsjs",
+    "gabriel": "la esquina inferior derecha da de la cama... parece que hubiera algo abajo de la cama...",
+    "usar": true,
+    "inventario": false
+  },
+  "mesa": {
+    "carla": "Que desorden, una mesa llena de cosas",
+    "gabriel": "Una mesa llena de boludeces",
+    "usar": true,
+    "inventario": false
+  },
+  "zapatero": {
+    "carla": "Un zapatero lleno de botines",
+    "gabriel": "EUUU altas llantas",
+    "usar": false,
+    "inventario": false
+  }
+}

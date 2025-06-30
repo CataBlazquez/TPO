@@ -1,0 +1,38 @@
+{
+  "llave ducha": {
+    "carla": "Carla revisa la llave de la ducha, pensando en un baño relajante.",
+    "gabriel": "Gabriel verifica si la ducha funciona bien para después de entrenar.",
+    "usar": true,
+    "inventario": false
+  },
+  "espejo": {
+    "carla": "Carla se mira en el espejo y se arregla el pelo.",
+    "gabriel": "Gabriel se mira en el espejo y se acomoda la remera.",
+    "usar": false,
+    "inventario": false
+  },
+  "bañera": {
+    "carla": "Carla sueña con un baño de burbujas.",
+    "gabriel": "Gabriel piensa en usar la bañera para relajar los músculos.",
+    "usar": true,
+    "inventario": false
+  },
+  "lavamanos": {
+    "carla": "Carla se lava las manos con jabón perfumado.",
+    "gabriel": "Gabriel se lava la cara para despertarse.",
+    "usar": true,
+    "inventario": false
+  },
+  "inodoro": {
+    "carla": "Carla revisa si hay papel higiénico.",
+    "gabriel": "Gabriel se asegura de que el inodoro funcione.",
+    "usar": true,
+    "inventario": false
+  },
+  "estante": {
+    "carla": "Carla revisa el estante buscando cremas y perfumes.",
+    "gabriel": "Gabriel busca desodorante en el estante.",
+    "usar": true,
+    "inventario": false
+  }
+}
