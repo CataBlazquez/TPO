@@ -1,8 +1,8 @@
-living={
+"living"={
     #puertas desde el living
     "cuarto principal": {
        'coordenada origen': (0,1), #si el jugador llega a esa coordenada, es la puerta literal, entonces ahi se hace el cambio de habitacion
-       'habitacion destino': 'cuarto principal',
+       'habitacion destino': 'dormitorio',
        "coordenada destino": (5,5), #donde "aterriza" en el siguiente cuarto, el 0 se va a convertir en 1
        "estado puerta": "abierta",
     },
@@ -30,7 +30,7 @@ living={
     }
 }
 
-cuarto_principal= {
+"dormitorio"= {
     #puertas desde cuarto principal
     "living": {
         'coordenada origen': (5,4),
@@ -40,7 +40,7 @@ cuarto_principal= {
         },
 }
 
-baño={#puertas desde el baño 
+"baño"={#puertas desde el baño 
     "living": {
         "coordenada origen": (2,4),
        'habitacion destino': 'living',
@@ -49,7 +49,7 @@ baño={#puertas desde el baño
     }}
 
 
-cocina={#puertas desde la cocina 
+"cocina"={#puertas desde la cocina 
     "living": {
         'coordenada origen': (2,4),
        'habitacion destino': 'living',
@@ -58,7 +58,7 @@ cocina={#puertas desde la cocina
     }}
 
 
-oficina={#puertas desde la oficina 
+"oficina"={#puertas desde la oficina 
     "living": {
         'coordenada origen': (5,2),
        'habitacion destino': 'living',
@@ -73,7 +73,7 @@ oficina={#puertas desde la oficina
     }}
 
 
-patio={ #puerta desde el patio
+"patio"={ #puerta desde el patio
     "oficina": {
         'coordenada origen': (2,0),
        'habitacion destino': 'oficina',
